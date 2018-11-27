@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F0582FC20AD07070089A3B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0582FB20AD07070089A3B6 /* AppDelegate.swift */; };
+		1F7D137D20ACF15E006F170C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D137B20ACF15E006F170C /* Main.storyboard */; };
+		1F7D138220ACF15E006F170C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D138120ACF15E006F170C /* Assets.xcassets */; };
+		1F7D138520ACF15E006F170C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F7D138320ACF15E006F170C /* LaunchScreen.storyboard */; };
+		1F7D139020ACF15E006F170C /* Citi_Bike_Locator_FinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D138F20ACF15E006F170C /* Citi_Bike_Locator_FinalTests.swift */; };
+		1F7D139B20ACF15E006F170C /* Citi_Bike_Locator_FinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D139A20ACF15E006F170C /* Citi_Bike_Locator_FinalUITests.swift */; };
+		1F9484B020AD03FA0039A768 /* CitiBikeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9484A920AD03F90039A768 /* CitiBikeDetailViewController.swift */; };
+		1F9484B120AD03FA0039A768 /* CitiBikeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9484AA20AD03F90039A768 /* CitiBikeTableViewController.swift */; };
+		1F9484B220AD03FA0039A768 /* CitiBikeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9484AB20AD03F90039A768 /* CitiBikeTableViewCell.swift */; };
+		1F9484B320AD03FA0039A768 /* CitiBikeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9484AC20AD03FA0039A768 /* CitiBikeCollection.swift */; };
+		1F9484B420AD03FA0039A768 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9484AD20AD03FA0039A768 /* SwiftyJSON.swift */; };
+		1F9484B520AD03FA0039A768 /* CitiBike.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9484AE20AD03FA0039A768 /* CitiBike.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F7D138C20ACF15E006F170C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F7D136C20ACF15E006F170C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F7D137320ACF15E006F170C;
+			remoteInfo = "Citi Bike Locator Final";
+		};
+		1F7D139720ACF15E006F170C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F7D136C20ACF15E006F170C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F7D137320ACF15E006F170C;
+			remoteInfo = "Citi Bike Locator Final";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F0582FB20AD07070089A3B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1F7D137420ACF15E006F170C /* Citi Bike Locator Final.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Citi Bike Locator Final.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7D137C20ACF15E006F170C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F7D138120ACF15E006F170C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F7D138420ACF15E006F170C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1F7D138620ACF15E006F170C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7D138B20ACF15E006F170C /* Citi Bike Locator FinalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citi Bike Locator FinalTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7D138F20ACF15E006F170C /* Citi_Bike_Locator_FinalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citi_Bike_Locator_FinalTests.swift; sourceTree = "<group>"; };
+		1F7D139120ACF15E006F170C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F7D139620ACF15E006F170C /* Citi Bike Locator FinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Citi Bike Locator FinalUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7D139A20ACF15E006F170C /* Citi_Bike_Locator_FinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Citi_Bike_Locator_FinalUITests.swift; sourceTree = "<group>"; };
+		1F7D139C20ACF15E006F170C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F9484A920AD03F90039A768 /* CitiBikeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiBikeDetailViewController.swift; sourceTree = "<group>"; };
+		1F9484AA20AD03F90039A768 /* CitiBikeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiBikeTableViewController.swift; sourceTree = "<group>"; };
+		1F9484AB20AD03F90039A768 /* CitiBikeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiBikeTableViewCell.swift; sourceTree = "<group>"; };
+		1F9484AC20AD03FA0039A768 /* CitiBikeCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiBikeCollection.swift; sourceTree = "<group>"; };
+		1F9484AD20AD03FA0039A768 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		1F9484AE20AD03FA0039A768 /* CitiBike.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CitiBike.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F7D137120ACF15E006F170C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7D138820ACF15E006F170C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7D139320ACF15E006F170C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F7D136B20ACF15E006F170C = {
+			isa = PBXGroup;
+			children = (
+				1F7D137620ACF15E006F170C /* Citi Bike Locator Final */,
+				1F7D138E20ACF15E006F170C /* Citi Bike Locator FinalTests */,
+				1F7D139920ACF15E006F170C /* Citi Bike Locator FinalUITests */,
+				1F7D137520ACF15E006F170C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F7D137520ACF15E006F170C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F7D137420ACF15E006F170C /* Citi Bike Locator Final.app */,
+				1F7D138B20ACF15E006F170C /* Citi Bike Locator FinalTests.xctest */,
+				1F7D139620ACF15E006F170C /* Citi Bike Locator FinalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F7D137620ACF15E006F170C /* Citi Bike Locator Final */ = {
+			isa = PBXGroup;
+			children = (
+				1F0582FB20AD07070089A3B6 /* AppDelegate.swift */,
+				1F9484AE20AD03FA0039A768 /* CitiBike.swift */,
+				1F9484AC20AD03FA0039A768 /* CitiBikeCollection.swift */,
+				1F9484A920AD03F90039A768 /* CitiBikeDetailViewController.swift */,
+				1F9484AB20AD03F90039A768 /* CitiBikeTableViewCell.swift */,
+				1F9484AA20AD03F90039A768 /* CitiBikeTableViewController.swift */,
+				1F9484AD20AD03FA0039A768 /* SwiftyJSON.swift */,
+				1F7D137B20ACF15E006F170C /* Main.storyboard */,
+				1F7D138120ACF15E006F170C /* Assets.xcassets */,
+				1F7D138320ACF15E006F170C /* LaunchScreen.storyboard */,
+				1F7D138620ACF15E006F170C /* Info.plist */,
+			);
+			path = "Citi Bike Locator Final";
+			sourceTree = "<group>";
+		};
+		1F7D138E20ACF15E006F170C /* Citi Bike Locator FinalTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F7D138F20ACF15E006F170C /* Citi_Bike_Locator_FinalTests.swift */,
+				1F7D139120ACF15E006F170C /* Info.plist */,
+			);
+			path = "Citi Bike Locator FinalTests";
+			sourceTree = "<group>";
+		};
+		1F7D139920ACF15E006F170C /* Citi Bike Locator FinalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1F7D139A20ACF15E006F170C /* Citi_Bike_Locator_FinalUITests.swift */,
+				1F7D139C20ACF15E006F170C /* Info.plist */,
+			);
+			path = "Citi Bike Locator FinalUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F7D137320ACF15E006F170C /* Citi Bike Locator Final */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7D139F20ACF15E006F170C /* Build configuration list for PBXNativeTarget "Citi Bike Locator Final" */;
+			buildPhases = (
+				1F7D137020ACF15E006F170C /* Sources */,
+				1F7D137120ACF15E006F170C /* Frameworks */,
+				1F7D137220ACF15E006F170C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Citi Bike Locator Final";
+			productName = "Citi Bike Locator Final";
+			productReference = 1F7D137420ACF15E006F170C /* Citi Bike Locator Final.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F7D138A20ACF15E006F170C /* Citi Bike Locator FinalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7D13A220ACF15E006F170C /* Build configuration list for PBXNativeTarget "Citi Bike Locator FinalTests" */;
+			buildPhases = (
+				1F7D138720ACF15E006F170C /* Sources */,
+				1F7D138820ACF15E006F170C /* Frameworks */,
+				1F7D138920ACF15E006F170C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F7D138D20ACF15E006F170C /* PBXTargetDependency */,
+			);
+			name = "Citi Bike Locator FinalTests";
+			productName = "Citi Bike Locator FinalTests";
+			productReference = 1F7D138B20ACF15E006F170C /* Citi Bike Locator FinalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F7D139520ACF15E006F170C /* Citi Bike Locator FinalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7D13A520ACF15E006F170C /* Build configuration list for PBXNativeTarget "Citi Bike Locator FinalUITests" */;
+			buildPhases = (
+				1F7D139220ACF15E006F170C /* Sources */,
+				1F7D139320ACF15E006F170C /* Frameworks */,
+				1F7D139420ACF15E006F170C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F7D139820ACF15E006F170C /* PBXTargetDependency */,
+			);
+			name = "Citi Bike Locator FinalUITests";
+			productName = "Citi Bike Locator FinalUITests";
+			productReference = 1F7D139620ACF15E006F170C /* Citi Bike Locator FinalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F7D136C20ACF15E006F170C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "David Hartglass";
+				TargetAttributes = {
+					1F7D137320ACF15E006F170C = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					1F7D138A20ACF15E006F170C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F7D137320ACF15E006F170C;
+					};
+					1F7D139520ACF15E006F170C = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1F7D137320ACF15E006F170C;
+					};
+				};
+			};
+			buildConfigurationList = 1F7D136F20ACF15E006F170C /* Build configuration list for PBXProject "Citi Bike Locator Final" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F7D136B20ACF15E006F170C;
+			productRefGroup = 1F7D137520ACF15E006F170C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F7D137320ACF15E006F170C /* Citi Bike Locator Final */,
+				1F7D138A20ACF15E006F170C /* Citi Bike Locator FinalTests */,
+				1F7D139520ACF15E006F170C /* Citi Bike Locator FinalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F7D137220ACF15E006F170C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7D138520ACF15E006F170C /* LaunchScreen.storyboard in Resources */,
+				1F7D138220ACF15E006F170C /* Assets.xcassets in Resources */,
+				1F7D137D20ACF15E006F170C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7D138920ACF15E006F170C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7D139420ACF15E006F170C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F7D137020ACF15E006F170C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F9484B220AD03FA0039A768 /* CitiBikeTableViewCell.swift in Sources */,
+				1F9484B120AD03FA0039A768 /* CitiBikeTableViewController.swift in Sources */,
+				1F9484B020AD03FA0039A768 /* CitiBikeDetailViewController.swift in Sources */,
+				1F9484B520AD03FA0039A768 /* CitiBike.swift in Sources */,
+				1F0582FC20AD07070089A3B6 /* AppDelegate.swift in Sources */,
+				1F9484B420AD03FA0039A768 /* SwiftyJSON.swift in Sources */,
+				1F9484B320AD03FA0039A768 /* CitiBikeCollection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7D138720ACF15E006F170C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7D139020ACF15E006F170C /* Citi_Bike_Locator_FinalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7D139220ACF15E006F170C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7D139B20ACF15E006F170C /* Citi_Bike_Locator_FinalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F7D138D20ACF15E006F170C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F7D137320ACF15E006F170C /* Citi Bike Locator Final */;
+			targetProxy = 1F7D138C20ACF15E006F170C /* PBXContainerItemProxy */;
+		};
+		1F7D139820ACF15E006F170C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F7D137320ACF15E006F170C /* Citi Bike Locator Final */;
+			targetProxy = 1F7D139720ACF15E006F170C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F7D137B20ACF15E006F170C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F7D137C20ACF15E006F170C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F7D138320ACF15E006F170C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F7D138420ACF15E006F170C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F7D139D20ACF15E006F170C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F7D139E20ACF15E006F170C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F7D13A020ACF15E006F170C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ND954ANL2;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Citi Bike Locator Final/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Hartglass.Citi-Bike-Locator-Final";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F7D13A120ACF15E006F170C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ND954ANL2;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = "Citi Bike Locator Final/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Hartglass.Citi-Bike-Locator-Final";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1F7D13A320ACF15E006F170C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ND954ANL2;
+				INFOPLIST_FILE = "Citi Bike Locator FinalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Hartglass.Citi-Bike-Locator-FinalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citi Bike Locator Final.app/Citi Bike Locator Final";
+			};
+			name = Debug;
+		};
+		1F7D13A420ACF15E006F170C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ND954ANL2;
+				INFOPLIST_FILE = "Citi Bike Locator FinalTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Hartglass.Citi-Bike-Locator-FinalTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Citi Bike Locator Final.app/Citi Bike Locator Final";
+			};
+			name = Release;
+		};
+		1F7D13A620ACF15E006F170C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ND954ANL2;
+				INFOPLIST_FILE = "Citi Bike Locator FinalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Hartglass.Citi-Bike-Locator-FinalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Citi Bike Locator Final";
+			};
+			name = Debug;
+		};
+		1F7D13A720ACF15E006F170C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2ND954ANL2;
+				INFOPLIST_FILE = "Citi Bike Locator FinalUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "David-Hartglass.Citi-Bike-Locator-FinalUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Citi Bike Locator Final";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F7D136F20ACF15E006F170C /* Build configuration list for PBXProject "Citi Bike Locator Final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7D139D20ACF15E006F170C /* Debug */,
+				1F7D139E20ACF15E006F170C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7D139F20ACF15E006F170C /* Build configuration list for PBXNativeTarget "Citi Bike Locator Final" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7D13A020ACF15E006F170C /* Debug */,
+				1F7D13A120ACF15E006F170C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7D13A220ACF15E006F170C /* Build configuration list for PBXNativeTarget "Citi Bike Locator FinalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7D13A320ACF15E006F170C /* Debug */,
+				1F7D13A420ACF15E006F170C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7D13A520ACF15E006F170C /* Build configuration list for PBXNativeTarget "Citi Bike Locator FinalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7D13A620ACF15E006F170C /* Debug */,
+				1F7D13A720ACF15E006F170C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F7D136C20ACF15E006F170C /* Project object */;
+}

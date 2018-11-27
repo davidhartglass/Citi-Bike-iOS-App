@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pas-Uz-cxF">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Citi Bikes Table View Controller-->
+        <scene sceneID="9eQ-a2-3Ap">
+            <objects>
+                <tableViewController id="3Yl-KK-42d" customClass="CitiBikesTableViewController" customModule="Citi_Bike_Locator_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="L4M-Xf-QLq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="CitiBikeCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CitiBikeCell" rowHeight="90" id="p89-gJ-h1i" customClass="CitiBikeTableViewCell" customModule="Citi_Bike_Locator_Final" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="p89-gJ-h1i" id="8QK-5F-aT8">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bike ID Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AvF-lD-lND">
+                                            <rect key="frame" x="16" y="15" width="113" height="60"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="AvF-lD-lND" firstAttribute="leading" secondItem="8QK-5F-aT8" secondAttribute="leadingMargin" id="AI5-VW-jsH"/>
+                                        <constraint firstItem="AvF-lD-lND" firstAttribute="centerY" secondItem="8QK-5F-aT8" secondAttribute="centerY" id="JOm-Rb-lPi"/>
+                                        <constraint firstItem="AvF-lD-lND" firstAttribute="top" secondItem="8QK-5F-aT8" secondAttribute="topMargin" constant="4" id="mNG-AL-CR4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="BikeIDLabel" destination="AvF-lD-lND" id="MNE-zy-6QA"/>
+                                    <segue destination="GLl-G9-IPN" kind="show" id="TGO-RM-aHX"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="3Yl-KK-42d" id="yLX-dQ-SdE"/>
+                            <outlet property="delegate" destination="3Yl-KK-42d" id="UyE-F5-1qy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="4UW-ZS-8w9"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BR8-nF-eOy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826" y="103"/>
+        </scene>
+        <!--Citi Bike Detail View Controller-->
+        <scene sceneID="mie-jX-hkb">
+            <objects>
+                <viewController id="GLl-G9-IPN" customClass="CitiBikeDetailViewController" customModule="Citi_Bike_Locator_Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ts8-a5-c0n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Hs-U0-eKd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="304"/>
+                            </mapView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Agw-Cd-TIg">
+                                <rect key="frame" x="177" y="241" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Communication" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="8fs-gJ-k4L">
+                                <rect key="frame" x="16" y="448" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Dne-LC-iyM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Station Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2S-IS-spY">
+                                <rect key="frame" x="16" y="508" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UMb-fW-RVB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance from Bike (Miles) " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUn-Q5-GMz">
+                                <rect key="frame" x="16" y="568" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2Ha-IF-dLk"/>
+                                    <constraint firstAttribute="width" constant="343" id="aNM-nH-VHg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmb-FD-BEA">
+                                <rect key="frame" x="16" y="388" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="SQw-J2-Zgz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91493869396568095" green="0.98629919593655779" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="8fs-gJ-k4L" firstAttribute="top" secondItem="Cmb-FD-BEA" secondAttribute="bottom" constant="20" id="9qg-DG-Mjs"/>
+                            <constraint firstItem="8fs-gJ-k4L" firstAttribute="leading" secondItem="lMy-WF-6HZ" secondAttribute="leading" constant="16" id="Ceq-g8-yN8"/>
+                            <constraint firstItem="lMy-WF-6HZ" firstAttribute="trailing" secondItem="Cmb-FD-BEA" secondAttribute="trailing" constant="16" id="PLd-ur-4pH"/>
+                            <constraint firstItem="Cmb-FD-BEA" firstAttribute="leading" secondItem="lMy-WF-6HZ" secondAttribute="leading" constant="16" id="UDs-Gk-pqc"/>
+                            <constraint firstItem="Agw-Cd-TIg" firstAttribute="leading" secondItem="lMy-WF-6HZ" secondAttribute="leading" constant="177" id="ViM-Qi-mOr"/>
+                            <constraint firstItem="lMy-WF-6HZ" firstAttribute="trailing" secondItem="8fs-gJ-k4L" secondAttribute="trailing" constant="16" id="Wtr-Zo-d36"/>
+                            <constraint firstItem="xUn-Q5-GMz" firstAttribute="leading" secondItem="U2S-IS-spY" secondAttribute="leading" id="Yx2-tU-JM3"/>
+                            <constraint firstItem="lMy-WF-6HZ" firstAttribute="trailing" secondItem="xUn-Q5-GMz" secondAttribute="trailing" constant="16" id="fO8-3i-nFk"/>
+                            <constraint firstItem="xUn-Q5-GMz" firstAttribute="top" secondItem="U2S-IS-spY" secondAttribute="bottom" constant="20" id="hCb-K5-gkR"/>
+                            <constraint firstItem="lMy-WF-6HZ" firstAttribute="bottom" secondItem="xUn-Q5-GMz" secondAttribute="bottom" constant="59" id="hx3-38-syi"/>
+                            <constraint firstItem="U2S-IS-spY" firstAttribute="leading" secondItem="lMy-WF-6HZ" secondAttribute="leading" constant="16" id="jho-Cs-bjR"/>
+                            <constraint firstItem="Agw-Cd-TIg" firstAttribute="top" secondItem="lMy-WF-6HZ" secondAttribute="top" constant="177" id="kly-Qd-G8T"/>
+                            <constraint firstItem="6Hs-U0-eKd" firstAttribute="trailing" secondItem="lMy-WF-6HZ" secondAttribute="trailing" id="kop-RW-rHv"/>
+                            <constraint firstItem="lMy-WF-6HZ" firstAttribute="trailing" secondItem="U2S-IS-spY" secondAttribute="trailing" constant="16" id="orC-b5-NCY"/>
+                            <constraint firstItem="Cmb-FD-BEA" firstAttribute="top" secondItem="6Hs-U0-eKd" secondAttribute="bottom" constant="20" id="r6y-FL-M1u"/>
+                            <constraint firstItem="6Hs-U0-eKd" firstAttribute="top" secondItem="lMy-WF-6HZ" secondAttribute="top" id="va4-MJ-C5Q"/>
+                            <constraint firstItem="lMy-WF-6HZ" firstAttribute="trailing" secondItem="Agw-Cd-TIg" secondAttribute="trailing" constant="178" id="w77-dW-OPQ"/>
+                            <constraint firstItem="6Hs-U0-eKd" firstAttribute="leading" secondItem="lMy-WF-6HZ" secondAttribute="leading" id="xbs-JT-YgP"/>
+                            <constraint firstItem="U2S-IS-spY" firstAttribute="top" secondItem="8fs-gJ-k4L" secondAttribute="bottom" constant="20" id="z4D-pq-S0D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="lMy-WF-6HZ"/>
+                    </view>
+                    <connections>
+                        <outlet property="distanceFromBike" destination="xUn-Q5-GMz" id="VHg-5L-lFY"/>
+                        <outlet property="idLabel" destination="Cmb-FD-BEA" id="PzL-68-3JZ"/>
+                        <outlet property="lastCommTimeLabel" destination="8fs-gJ-k4L" id="PDP-LP-oJL"/>
+                        <outlet property="mapLoadingIndicator" destination="Agw-Cd-TIg" id="8E2-mh-k98"/>
+                        <outlet property="myMapView" destination="6Hs-U0-eKd" id="VKS-VM-pSk"/>
+                        <outlet property="stationNameLabel" destination="U2S-IS-spY" id="5qf-3X-O7a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="do9-1G-UB4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1613.5999999999999" y="102.99850074962519"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Vab-sU-G9t">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pas-Uz-cxF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9T9-df-mGZ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="3Yl-KK-42d" kind="relationship" relationship="rootViewController" id="LPX-lm-LXj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yq-AV-Ag0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6" y="103"/>
+        </scene>
+    </scenes>
+</document>
